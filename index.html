@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            body, ul, li, h1, h2, a{
+                margin: 0;
+                padding: 0;
+                font-family: arial;
+            }
+             header{
+    background-color:royalblue;
+    
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+}
+body{
+    background-color: powderblue;
+
+}
+header h1{
+    color: cornsilk;
+    border: 8px solid orangered;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 36px;
+}
+.banner{
+    position:relative;
+}
+.banner img{
+    max-width: 100%;
+}
+.banner .welcome{
+    background-color: rgb(224, 17, 17);
+    color:wheat;
+    padding: 30px;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    
+
+}
+.banner h2{
+    font-size: 70px;
+}
+.banner h2 span{
+    font-size: 1em;
+}
+nav{
+    background-color: cornsilk;
+    padding: 20px;
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0  auto;
+}
+nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+
+}
+nav li a {
+    text-decoration: none;
+    color: red;
+    font-family: normal;
+    
+    font-style: normal;
+}
+nav li a.join{
+    color: royalblue;
+}
+article h2{
+    color: crimson;
+    font-size: 48px;
+}
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+article p{
+    line-height: 1.5em;
+    color: mediumblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    
+}
+.images{
+    text-align:center;
+    margin: 80px 0;
+    
+
+}
+.images li{
+    display: inline-block;
+    margin: 20px 5%;
+    width: 40%;
+
+}
+.images li img{
+    max-width: 100%;
+}
+.join{
+    background-color:cornsilk;
+    text-align: center;
+    color: sienna;
+    padding: 40px 10px;
+
+}
+.join h2{
+    font-size: 36px;
+}
+form input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 30px;
+    border: 4px solid blueviolet;
+}
+footer{
+    background-color: darkcyan;
+    color: wheat;
+    padding: 10px;
+    text-align: center;
+}
+@media  screen and (max-width:1400px) {
+    .banner .welcome h2{
+        font-size: 60px;
+    }    
+    .banner{
+        position: relative;
+    }
+        nav li{
+        font-size: 18px;
+    }
+
+
+    
+}
+@media screen and (max-width:960px) {
+    .banner .welcome h2{
+        font-size: 40px;
+    }
+    
+}
+@media screen and (max-width:700px) {
+    .banner .welcome{
+        position: relative;
+        text-align: center;
+        padding: 1px;
+    }
+    .banner .welcome br{
+        display: none;
+        
+    }
+    .banner .welcome h2{
+        font-size: 25px;
+    }
+    .banner .welcome span{
+        font-size: 1em;
+    }
+    .images li{
+        width: 100%;
+        margin: 20px auto;
+        display: inline-block;
+    }
+}
+@media screen and (max-width:700px)   {
+    nav li{
+        font-size: 20px;
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+        padding: 0;
+    }
+    header{
+        position: relative;
+    }
+    nav{
+        top: 0;
+    }
+
+}  
+
+
+
+        </style>
+         
+        <title>Marioclub</title>
+    </head>
+    <body>
+        <header>
+            <h1>Marioclub</h1>
+
+
+        </header>
+        <section class="banner">
+            <img src="images/banner.png"   alt="marioclub welcome banner">
+            <div class="welcome">
+                <h2>Welcome to <br><span>Marioclub</span></h2>
+            </div>
+        </section>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/join.html" class="join">Join the club</a></li>        
+                <li><a href="/news.html">Latest News</a></li>
+                <li><a href="/games.html">New Games</a></li>
+                <li><a href="/contact.html">Contacts</a></li>
+                        
+            </ul>
+        </nav>
+        <main>
+            <article>
+                <h2>It's a me, Mario</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem libero provident illum rerum. Facere nemo aspernatur in rem sed nesciunt dolor id odit laboriosam. Deleniti fugiat, obcaecati quae placeat nisi consequuntur earum provident veritatis qui laboriosam, incidunt ex aperiam beatae.</p>
+            </article>
+            <ul class="images">
+                <li><img src="images/thumb-1.png" alt="mario thumb-1" ></li>
+                <li><img src="images/thumb-2.png" alt="mario thumb-2"></li>
+            </ul>
+        </main>
+        <section class="join">
+            <h2>Join Today!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, sapiente tempora.</p>
+            <form>
+                <input type="email" name="email" placeholder="Type email & hit enter" required>
+            </form>
+        </section>
+        <footer>
+            <p class="copyright">copyright 2022 Marioclub</p>
+
+        </footer>
+    </body>
+</html>
